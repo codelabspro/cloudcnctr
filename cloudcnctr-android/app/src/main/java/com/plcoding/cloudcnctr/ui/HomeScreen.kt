@@ -44,33 +44,33 @@ fun HomeScreen() {
     ) {
         Column {
             GreetingSection()
-            ChipSection(chips = listOf("Sweet sleep", "Insomnia", "Depression"))
+            ChipSection(chips = listOf("Equity", "Fund", "Crypto"))
             CurrentMeditation()
             FeatureSection(
                 features = listOf(
                     Feature(
-                        title = "Sleep meditation",
+                        title = "Stocks",
                         R.drawable.ic_headphone,
                         BlueViolet1,
                         BlueViolet2,
                         BlueViolet3
                     ),
                     Feature(
-                        title = "Tips for sleeping",
+                        title = "Options",
                         R.drawable.ic_videocam,
                         LightGreen1,
                         LightGreen2,
                         LightGreen3
                     ),
                     Feature(
-                        title = "Night island",
+                        title = "Forex",
                         R.drawable.ic_headphone,
                         OrangeYellow1,
                         OrangeYellow2,
                         OrangeYellow3
                     ),
                     Feature(
-                        title = "Calming sounds",
+                        title = "Crypto",
                         R.drawable.ic_headphone,
                         Beige1,
                         Beige2,
@@ -80,11 +80,11 @@ fun HomeScreen() {
             )
         }
         BottomMenu(items = listOf(
+            BottomMenuContent("Search", R.drawable.ic_search),
+            BottomMenuContent("Assets", R.drawable.ic_bubble),
             BottomMenuContent("Home", R.drawable.ic_home),
-            BottomMenuContent("Meditate", R.drawable.ic_bubble),
-            BottomMenuContent("Sleep", R.drawable.ic_moon),
-            BottomMenuContent("Music", R.drawable.ic_music),
-            BottomMenuContent("Profile", R.drawable.ic_profile),
+            BottomMenuContent("Markets", R.drawable.ic_bubble),
+            BottomMenuContent("More", R.drawable.ic_profile),
         ), modifier = Modifier.align(Alignment.BottomCenter))
     }
 }
@@ -175,7 +175,7 @@ fun GreetingSection(
             verticalArrangement = Arrangement.Center
         ) {
             Text(
-                text = "Welcome to Cloud Cnctr, $name",
+                text = "Cloud Cnctr Console$name",
                 style = MaterialTheme.typography.h2
             )
             Text(
@@ -241,7 +241,7 @@ fun CurrentMeditation(
                 style = MaterialTheme.typography.h2
             )
             Text(
-                text = "Meditation • 3-10 min",
+                text = "Markets Surveillance •",
                 style = MaterialTheme.typography.body1,
                 color = TextWhite
             )
