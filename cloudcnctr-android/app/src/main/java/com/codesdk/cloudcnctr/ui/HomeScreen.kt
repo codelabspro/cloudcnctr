@@ -44,7 +44,7 @@ fun HomeScreen() {
     ) {
         Column {
             GreetingSection()
-            ChipSection(chips = listOf("Equity", "Fund", "Crypto"))
+            ChipSection(chips = listOf("Equity", "Fund", "Bitcoin", "Ethereum"))
             CurrentMeditation()
             FeatureSection(
                 features = listOf(
@@ -70,7 +70,7 @@ fun HomeScreen() {
                         OrangeYellow3
                     ),
                     Feature(
-                        title = "Crypto",
+                        title = "Bitcoin",
                         R.drawable.ic_headphone,
                         Beige1,
                         Beige2,
